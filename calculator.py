@@ -21,9 +21,9 @@ class Calculator:
             print("0 - SAIR")
             choice = int(input("Escolha a operação: "))
 
-            if choice == 9:  # VISUALIZAR HISTÓRICO
+            if choice == 9:  
                 self.display_history()
-            elif choice == 0:  # SAIR
+            elif choice == 0: 
                 break
             else:
                 if choice == 1 and self.previous_result != 0:
@@ -35,36 +35,36 @@ class Calculator:
     def calculate(self, operation):
         result = 0
 
-        if 1 <= operation <= 4:  # Operações com dois números
+        if 1 <= operation <= 4:
             num1 = float(input("Digite o primeiro número: "))
             num2 = float(input("Digite o segundo número: "))
 
-            if operation == 1:  # SOMA
+            if operation == 1: 
                 result = num1 + num2
-            elif operation == 2:  # SUBTRAÇÃO
+            elif operation == 2:
                 result = num1 - num2
-            elif operation == 3:  # MULTIPLICAÇÃO
+            elif operation == 3: 
                 result = num1 * num2
-            elif operation == 4:  # DIVISÃO
+            elif operation == 4:
                 if num2 != 0:
                     result = num1 / num2
                 else:
                     print("Erro: divisão por zero.")
                     return
-        elif 5 <= operation <= 8:  # Operações com um número
+        elif 5 <= operation <= 8:
             num = float(input("Digite o número: "))
 
-            if operation == 5:  # ELEVAR NÚMERO AO QUADRADO
+            if operation == 5:  
                 result = num ** 2
-            elif operation == 6:  # ELEVAR NÚMERO AO CUBO
+            elif operation == 6: 
                 result = num ** 3
-            elif operation == 7:  # RAIZ QUADRADA
+            elif operation == 7:
                 if num >= 0:
                     result = math.sqrt(num)
                 else:
                     print("Erro: não é possível calcular a raiz quadrada de um número negativo.")
                     return
-            elif operation == 8:  # RAIZ CÚBICA
+            elif operation == 8: 
                 result = num ** (1 / 3)
 
         print("Resultado:", result)
