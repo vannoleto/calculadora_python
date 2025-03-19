@@ -70,10 +70,6 @@ Resultado: 15
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, correções ou novas funcionalidades.
 
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE). Sinta-se à vontade para usá-lo e modificá-lo conforme necessário.
-
 ## Contato
 
 Se tiver dúvidas ou sugestões, entre em contato:
